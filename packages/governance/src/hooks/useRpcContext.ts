@@ -4,6 +4,8 @@ import { useEffect, useMemo, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { IWallet, RpcContext } from '../models/api';
 
+const GOV_PROGRAM_ID = 'AVoAYTs36yB5izAaBkxRG67wL1AMwG3vo41hKtUSb8is';
+
 export function useRpcContext() {
   const { endpoint } = useConnectionConfig();
   const connection = useConnection();
@@ -12,9 +14,7 @@ export function useRpcContext() {
 
   const programId = useMemo(() => {
     const params = new URLSearchParams(location.search);
-    return (
-      params.get('programId') ?? 'GovER5Lthms3bLBqWub97yVrMmEogzX7xNjdXpPPCVZw'
-    );
+    return params.get('programId') ?? GOV_PROGRAM_ID;
   }, [location]);
 
   const [rpcContext, setRpcContext] = useState(
