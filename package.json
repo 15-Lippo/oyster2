@@ -4,6 +4,12 @@
     "packages": [
       "packages/*"
     ]
+{
+  "scripts": {
+    "build": "[my-framework] build --output public"
+  }
+}
+
   },
   "keywords": [],
   "license": "Apache-2.0",
