@@ -14,3 +14,7 @@ yarn-error.log*
 *.css.map
 #vercel
 .vercel
+!node_modules 
+ !.vercel 
+ */.vercel/project.json 
+ */.vercel/README.txt
