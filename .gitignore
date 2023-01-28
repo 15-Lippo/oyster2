@@ -10,12 +10,15 @@
  # testing 
  /coverage 
   
- # next.js 
- /.next/ 
+ # react.js 
+ /.react/ 
  /out/ 
   
  # production 
- /build 
+ /build
+
+ #output
+ /build
   
  # misc 
  .DS_Store 
