@@ -78,7 +78,7 @@
   },
   {
   "scripts": {
-    "build": "[my-framework] build --output public"
+    "build": "[my-oyster2] build --output public"
   }
 }
   
